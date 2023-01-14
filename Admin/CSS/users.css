@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.users_body{
+    margin-top: 84px;
+    margin-left: 16%;
+    margin-right: 1%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.users_card_container{
+    background-color: #f5f4f4;
+    border-radius: 10px;
+}
+
+.users_card_container:hover{
+    box-shadow: 0px -7px 6px rgb(168, 168, 168), 10px 0px 6px rgb(168, 168, 168), 0px 10px 6px rgb(168, 168, 168), -10px 2px 6px rgb(168, 168, 168);
+}
+.user_card{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.btn_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.delete_user{
+    flex-basis: 40%;
+    padding: 5px;
+    border: none;
+    background-color: rgb(206, 32, 32);
+    color: white;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+.edit_user{
+    flex-basis: 40%;
+    padding: 5px;
+    border: none;
+    background-color:rgb(37, 139, 37);
+    color: white;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* modal box styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    top: 80px;
+    left: 30%;
+    background-color: #fefefe;
+    width: 50%;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+    padding: 3px 16px;
+    background-color: #dbdddb;
+    color: #111;
+}
+.modal-header h2{
+    text-align: center;
+}
+
+.modal-body {
+    padding: 5px 10px;
+}
+
+/* modal form section */
+.form_group{
+    padding: 5px 20px;
+}
+.form_group input, select,textarea{
+    display: block;
+    padding: 7px;
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+    outline: none;
+}
+.form_group input:hover, select:hover,textarea:hover{
+    box-shadow: 5px 6px black;
+}
+button{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    background-color: rgb(176, 176, 176);
+    border: none;
+    color: #000;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: #767676;
+    color: #fff;
+    transform: scale(1.1);
+}

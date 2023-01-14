@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.new_product_form{
+    margin-top: 72px;
+    margin-left: 15%;
+}
+h1{
+    text-align: center;
+    padding: 0.5rem;
+}
+form{
+    width: 50%;
+    margin: 20px auto;
+}
+
+form div{
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 11px;
+    color: rgb(108, 108, 108);
+    text-transform: uppercase;
+}
+form div input, textarea, select{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+form div input:hover, textarea:hover, select:hover{
+    box-shadow: 5px 8px black;
+}
+form div button{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: #f34c3f;
+}
+form div button:hover{
+    transform: scale(1.02);
+    text-transform: uppercase;
+    box-shadow: 3px 5px black;
+}
+span{
+    display: none;
+}
+.err{
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.success{
+    display: none;
+}

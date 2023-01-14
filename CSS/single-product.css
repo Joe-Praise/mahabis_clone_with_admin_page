@@ -1,0 +1,1464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.single_product_top_content{
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.top_anchor{
+    display: inline-flex;
+    font-size: 10px;
+    margin-left: 40px;
+    color: black;
+}
+.top_anchor a{
+    color: black;
+    text-decoration: none;
+}
+.top_anchor a:hover{
+    text-decoration: underline;
+}
+
+/* product portfolio container section */
+
+.product_portfolio_container{
+    max-width: 96%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+/* left flex images style */
+.img_container{
+   margin: 40px 0;
+   max-width: 60%;
+}
+.img-flex, .img-flex2{
+    display: flex;
+    gap: 15px;
+}
+.img-flex div, .img-flex2 div{
+    width: 500px;
+    margin-bottom: 15px;
+    background-color:#f0f0f0;
+}
+.img-flex div img, .img-flex2 div img{
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+.img-flex div video{
+    width: 100%;
+}
+
+/* right description container */
+.description_container{
+    max-width: 50%;
+    margin: 40px 15px;
+}
+.description_container h1{
+    margin: 5px 0;
+}
+.description_container p{
+    font-size: 11px;
+    margin: 5px 0 0 0;
+}
+#color_description{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* style for the color buttons to choose the upper color */
+.color_button_container{
+    display: flex;
+    gap: 2px;
+    margin: 10px;    
+}
+.color_button_container div{
+    width: 50px;
+    padding-top: 3px;
+    text-align: center;
+}
+
+.color_button_container div img{
+    width: 40px;
+    padding: 1px;
+    height: auto;
+    cursor: pointer;
+}
+
+.color_button_container div img:hover{
+    opacity: 0.7;
+}
+
+/* style for the color to pick choose the sole color */
+.color_button_container-2{
+    display: flex;
+    gap: 8px;
+    margin: 10px;
+}
+
+#sole_color_description{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#box-1, #box-2, #box-3, #box-4{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#box-1:hover, #box-2:hover, #box-3:hover, #box-4:hover{
+    opacity: 0.7;
+}
+
+#box-1{
+    background-color: rgb(235, 235, 63);
+}
+#box-2{
+    background-color: black;
+}
+#box-3{
+    background-color: rgb(98, 98, 176);
+}
+#box-4{
+    background-color: rgb(12, 92, 12);
+}
+
+.space_between{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5px 0;
+}
+
+/* the section for the various shoe sizes available */
+.size_box a{
+    display: inline-block;
+    padding: 7px;
+    margin: 2px;
+    border: 1px solid rgb(211, 211, 211,0.9);
+    color:  rgb(211, 211, 211);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+.size_box .focus{
+    color: black;
+}
+
+/* add to cart button */
+#add_to_cart a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 0;
+    padding: 12px 0;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+.review_section ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.review_section ul li:not(.panel li){
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 9px 0;
+    border-bottom:1px solid rgb(211, 211, 211) ;
+}
+.review_section ul li a{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+.review_section span{
+    float: right;
+}
+
+.space_between.red{
+    margin-top: 10px;
+}
+
+.space_between.red a{
+    color: red;
+    font-size: 11px;
+    text-decoration: none;
+}
+.space_between.red a:hover{
+    text-decoration: underline;
+}
+
+/* accordion section */
+.accordion {
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it(hover) */
+
+.active, .accordion:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.accordion:after {
+    content: '';
+    font-size: 19px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "";
+}
+
+/* style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.4s ease-out;
+}
+.panel p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.panel li{
+    font-size: smaller;
+}
+/* pheewww😅 glad thats over */
+
+.single_product_section-2{
+    width: 94%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.single_controls{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.single_controls .icons img{
+    width: 50px;
+    margin: 0 4px;
+}
+.single_page_h1{
+    font-size:34px ;
+}
+
+
+/* slider section */
+
+.single_product_slider_container{
+    position: relative;
+    max-width: 1000px;
+    min-width:700px;
+    padding:10px 0;
+}
+
+.single_product_slider{
+    display: inline-flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.single_product_img{
+    background-color:#f0f0f0;
+}
+
+.single_items{
+    width: 460px;
+    z-index: 2;
+}
+.single_product_img img{
+    width: 100%;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+
+
+/* symbols used to control the slider */
+
+.inline{
+    margin-top: 10px;
+}
+
+.single_product_section-2 .swiper-button-next{
+    position: absolute;
+    display: inline-block;
+    color:black;
+    top: 10px;
+    right: 15%;
+    width: 30px;
+    text-align: center;
+}
+.single_product_section-2 .swiper-button-next:hover, .single_product_section-2 .swiper-button-prev:hover{
+    box-shadow: 0px -5px 5px lightgray, 5px 0px 5px lightgray, 0px 5px 5px lightgray, -5px 0px 5px lightgray ;
+}
+.swiper-button-prev{
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 70%;
+    color:black;
+    width: 30px;
+    text-align: center;
+}
+
+
+/* spliting_shoe section */
+.spliting_shoe_section{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 280px;
+}
+.spliting_shoe_section h2{
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 7px 0;
+    font-size:24px;
+}
+.spliting_shoe_section h2 span{
+    font-weight: 100;
+}
+.spliting_shoe_section p{
+    color: #8A8A8A;
+}
+
+.split_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    max-width: 100%;
+    min-width: 500px;
+}
+.left_split_text, .right_split_text{
+    flex-basis: 20%;
+}
+.middle_split_img{
+    position: relative;
+    flex-basis: 40%;
+}
+.middle_split_img img{
+    width: 80%;
+}
+
+#animation-1{
+    width: 640px;
+    position: absolute;
+    top: -5%;
+}
+#animation-2{
+    width: 640px;
+    margin-top: 0px;
+    transition: all 0.2s ease-in-out;
+}
+#animation-3{
+    width: 640px;
+    margin-top: -95px;
+    transition: all 0.2s ease-in-out;
+}
+#animation-4{
+    width: 648px;
+    margin-top: -80px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* text to show on scroll */
+#left_text-1{
+ margin-top: 95px;
+}
+
+#left_text-2{
+    margin-top: 210px; 
+}
+
+#right_text-1{
+    text-align: left;
+}
+#right_text-2{
+margin-top: 180px;
+text-align: left;
+}
+#right_text-3{
+ margin-top: 160px;  
+ text-align: left; 
+}
+.left_split_text h3, .right_split_text h3{
+    font-size: 20px;
+}
+.left_split_text .small, .right_split_text .small{
+    color: black;
+    font-weight: 700;
+}
+.left_split_text, .right_split_text{
+    visibility: hidden;
+}
+
+/* single_product_bg_img */
+
+.single_product_bg_img img{
+    width: 100%;
+}
+
+.mahabis_classic{
+    text-align: center;
+    margin-top: 50px;
+    width: 80%;
+    margin: 50px auto 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+.mahabis_classic h2{
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 7px 0;
+    font-size:24px ;
+}
+.mahabis_classic h2 span{
+    font-weight: 100;
+}
+.mahabis_classic p{
+    color: black;
+    font-weight: 550;
+}
+#p-tag{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+/* flex_bottom_content_section */
+.single_flex_items{
+    margin: 30px 0;
+}
+.flex_container{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+.single_flex_items{
+    flex-basis: 50%;
+}
+.single_flex_items img{
+    width: 100%;
+}
+.single_flex_items.text{
+    padding: 50px;
+    margin-top: 190px;
+}
+.single_flex_items.text h5{
+    font-size: 34px;
+    font-weight: 400;
+}
+
+/* will define the width and height of an empty div in other to acheive the short line */
+.single_flex_items .short_line{
+    width: 40px;
+    border: 1px solid black;
+    background-color: brown;
+    margin: 15px 0;
+}
+
+.single_flex_items.text p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+
+/* review section */
+.review_section_2{
+    position: relative;
+    margin-bottom: 120px;
+}
+
+#review_header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+#review_header p{
+    font-size: 20px;
+    margin: 0 10px;
+}
+#review_header img{
+    width: 150px;
+}
+
+#left_side{
+    display: flex;
+}
+
+#bottom_flex{
+    display: flex;
+    justify-content: left;
+    margin:10px 0 0 30px;
+}
+
+.top_review_bottom{
+    display: flex;
+    justify-content: left;
+    margin: 0 10px;
+}
+.top_review_bottom p{
+    font-size: 15px;
+}
+
+.top_review_bottom img{
+    width: 80px;
+}
+
+.review_slider_container{
+    max-width: 850px;
+    width:100%;
+    padding:10px 0;
+    margin: 30px auto 130px auto;
+    border-top: 1px solid lightgray;
+    /* background-color: black; */
+}
+
+.review_slider{
+    display: inline-flex;
+    margin: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.review_items{
+    width:370px;
+    height: 300px;
+    background-color: #e1e1e1;
+    padding: 50px 10px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+
+.review_items_text img{
+    width: 120px;
+    height: 30px;
+    mix-blend-mode: multiply;
+}
+
+.review_items_text p{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+/* symbols used to control the slider */
+#review_header .icons-2 img{
+    width: 50px;
+}
+.inline{
+    margin-top: 10px;
+}
+
+.review_section_2 h4{
+    margin: 5PX 0 0 30px;
+    color: #b1b1b1;
+}
+
+.review_section_2 .swiper-button-next{
+    position: absolute;
+    display: inline-block;
+    color:black;
+    top: 20px;
+    right: 20%;
+    text-align: center;
+    width: 30px;
+} 
+ .review_section_2 .swiper-button-next:hover, .review_section_2 .swiper-button-prev:hover{
+    box-shadow: 0px -5px 5px lightgray, 5px 0px 5px lightgray, 0px 5px 5px lightgray, -5px 0px 5px lightgray ;
+}
+.review_section_2 .swiper-button-prev{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    left: 70%;
+    color:black;
+    width: 30px;
+    text-align: center;
+}
+
+
+
+/* media query */
+
+@media (max-width:980px){
+    #animation-1{
+        width: 640px;
+        position: absolute;
+        top: -5%;
+    }
+    #animation-2{
+        width: 640px;
+        margin-top: 0px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-3{
+        width: 640px;
+        margin-top: -95px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-4{
+        width: 648px;
+        margin-top: -85px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media (max-width:900px){
+    #animation-1{
+        width: 640px;
+        position: absolute;
+        top: -5%;
+    }
+    #animation-2{
+        width: 640px;
+        margin-top: 0px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-3{
+        width: 640px;
+        margin-top: -95px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-4{
+        width: 648px;
+        margin-top: -86px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media (max-width:861px){
+    .product_portfolio_container{
+        margin-bottom: 80px;
+    }
+    .img_container{
+        margin: 40px 0;
+        max-width: 55%;
+    }
+
+    .img-flex div{
+        margin-bottom: 15px;
+        background-color:#f0f0f0;
+    }
+    .img-flex div img{
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+    .img-flex div video{
+        width: 100%;
+    }
+     
+    /* right description container */
+    .description_container{
+        max-width: 50%;
+        margin: 40px 15px;
+        min-width: 30%;
+    }
+     .description_container h1{
+        margin: 5px 0;
+    }
+    .description_container p{
+        font-size: 11px;
+        margin: 5px 0 0 0;
+    }
+    #color_description{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+    /* add to cart button section*/
+    #add_to_cart button{
+        width: 100%;
+        margin: 30px 0;
+        padding: 12px 0;
+        color: white;
+        background-color: black;
+        border-radius: 3px;
+        letter-spacing: 5px;
+        font-size: 11px;
+    }
+    .review_section ul{
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .review_section ul li{
+        font-size: 11px;
+        letter-spacing: 2px;
+        padding: 9px 0;
+        border-bottom:1px solid rgb(211, 211, 211) ;
+    }
+    .review_section ul li a{
+        width: 100%;
+        color: black;
+        text-decoration: none;
+    }
+    .review_section span{
+        float: right;
+    }
+    .cart_dropdown{
+        display: none;
+    }
+    
+    .space_between.red{
+        margin-top: 10px;
+    }
+    
+    .space_between.red a{
+        color: red;
+        font-size: 11px;
+        text-decoration: none;
+    }
+    .space_between.red a:hover{
+        text-decoration: underline;
+    }
+
+    /* top slider section */
+
+    .single_product_section-2{
+        width: 94%;
+        margin: 0 auto 50px auto;
+    }
+    .single_controls{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .single_controls .icons img{
+        width: 45px;
+        margin: 0 4px;
+    }
+    .single_page_h1{
+        font-size:24px;
+    }
+    
+    .single_product_slider_container{
+        position: relative;
+        max-width: 900px;
+        min-width: 300px;
+        padding:10px 0;
+    }
+
+    .single_product_slider{
+        display: inline-flex;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .single_product_img{
+        background-color:#f0f0f0;
+    }
+
+    .single_items{
+        width: 400px;
+        z-index: 2;
+    }
+    .single_product_img img{
+        width:100%;
+        mix-blend-mode: multiply;
+        object-fit: contain;
+    }
+
+    /* symbols used to control the slider */
+    .inline{
+        margin-top: 10px;
+    }
+
+    .single_product_section-2 .swiper-button-next{
+        position: absolute;
+        display: inline-block;
+        color:black;
+        top: 0px;
+        right: 15%;
+        width: 30px;
+        text-align: center;
+    }
+   
+    .swiper-button-prev{
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        left: 70%;
+        color:black;
+        width: 30px;
+        text-align: center;
+    }
+
+
+    /* sliding shoe section */
+
+    .spliting_shoe_section{
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+    .spliting_shoe_section h2{
+        font-weight: 900;
+        letter-spacing: 1px;
+        margin: 7px 0;
+        font-size:22px ;
+    }
+    .spliting_shoe_section h2 span{
+        font-weight: 100;
+    }
+    .spliting_shoe_section p{
+        color: #8A8A8A;
+    }
+    
+    .split_container{
+        display: flex;
+        justify-content: center;
+        margin-top: 240px;
+        max-width: 100%;
+        min-width: 400px;
+    }
+    .left_split_text, .right_split_text{
+        flex-basis: 20%;
+    }
+    .middle_split_img{
+        flex-basis: 20%;
+    }
+    .middle_split_img img{
+        width: 60%;
+    }
+    
+    #animation-1{
+        width: 640px;
+    }
+    #animation-2{
+        width: 640px;
+        margin-top: -10px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-3{
+        width: 640px;
+        margin-top: -60px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-4{
+        width: 645px;
+        margin-top: -63px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    /* text to show on scroll */
+    #left_text-1{
+        margin-top: -70px;
+    }
+    
+    #left_text-2{
+        margin-top: 150px; 
+    }
+    
+    #right_text-1{
+        text-align: left;
+        margin-top: -80px;
+    }
+    #right_text-2{
+        margin-top: 50px;
+        text-align: left;
+    }
+    #right_text-3{
+        margin-top: 80px;  
+        text-align: left; 
+    }
+    .left_split_text h3, .right_split_text h3{
+        font-size: 15px;
+    }
+    .left_split_text .small, .right_split_text .small{
+        color: black;
+        font-weight: 700;
+    }
+    .left_split_text, .right_split_text{
+        visibility: hidden;
+    }
+
+    .mahabis_classic h2{
+        font-size:22px ;
+    }
+    #p-tag{
+        font-size: 15px;
+    }
+
+    /* flex text and img section */
+
+    .flex_container{
+        display: flex;
+        justify-content: center;
+        margin: 80px 0;
+    }
+    .single_flex_items{
+        flex-basis: 40%;
+        margin: 0px 0;
+    }
+    .single_flex_items img{
+        width: 100%;
+    }
+    .single_flex_items.text{
+        padding: 30px;
+        margin-top: 0px;
+    }
+    .single_flex_items.text h5{
+        font-size: 19px;
+        font-weight: 400;
+    }
+    /* will define the width and height of an empty div in other to acheive the short line */
+    .single_flex_items .short_line{
+        width: 40px;
+        border: 1px solid black;
+        background-color: brown;
+        margin: 15px 0;
+    }
+
+    .single_flex_items.text p{
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    /* review section */
+    .review_section_2{
+        margin-bottom: 120px;
+    }
+    
+    #review_header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        width: 100%;
+    }
+    #review_header h1{
+        font-size: 21px;
+    }
+    #review_header p{
+        font-size: 14px;
+        margin: 0 10px;
+    }
+    #review_header img{
+        width: 50px;
+    }
+    
+    #left_side{
+        display: flex;
+    }
+    
+    #bottom_flex{
+        display: flex;
+        justify-content: left;
+        margin:10px 0 0 30px;
+    }
+    
+    .top_review_bottom{
+        display: flex;
+        justify-content: left;
+        margin: 0 3px;
+    }
+    .top_review_bottom p{
+        font-size: 13px;
+    }
+    
+    .top_review_bottom img{
+        width: 60px;
+    }
+    
+    .review_slider_container{
+        max-width: 800px;
+        min-width: 200px;
+        padding:10px 0;
+        margin: 30px auto 130px auto;
+        border-top: 1px solid lightgray;
+        /* background-color: black; */
+    }
+    
+    .review_slider{
+        display: inline-flex;
+        margin: 0 10px;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .review_items{
+        width:350px;
+        height: 300px;
+        background-color: #e1e1e1;
+        padding: 50px 10px;
+        margin: 0 auto;
+        /* background-color: red; */
+    }
+    
+    .review_items img{
+        width: 100px;
+        height: 30px;
+        mix-blend-mode: multiply;
+    }
+    
+    .review_items_text p{
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    
+    /* symbols used to control the slider */
+    
+    .inline{
+        margin-top: 10px;
+    }
+    
+    .review_section_2 h4{
+        margin: 5PX 0 0 30px;
+        color: #b1b1b1;
+    }
+    
+    .review_section_2 .swiper-button-next{
+        position: absolute;
+        display: inline-block;
+        color:black;
+        top: 20px;
+        right: 15%;
+        text-align: center;
+    } 
+     .review_section_2 .swiper-button-next:hover, .review_section_2 .swiper-button-prev:hover{
+        box-shadow: 0px -5px 5px lightgray, 5px 0px 5px lightgray, 0px 5px 5px lightgray, -5px 0px 5px lightgray ;
+    }
+    .review_section_2 .swiper-button-prev{
+        position: absolute;
+        display: inline-block;
+        top: 20px;
+        left: 65%;
+        color:black;
+        width: 30px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 818px){
+    .product_portfolio_container{
+        display: block;
+    }
+
+    .img_container{
+        max-width: 100%;
+        margin: 5px auto 0 auto;
+    }
+    .img-flex div{
+        width: 60%;
+    }
+    .img-flex div img{
+        height:300px;
+    }
+
+    .img-flex div{
+        height: 300px;
+    }
+
+    /* right description container */
+    
+    .description_container{
+       max-width: 94%;
+       margin: 40px auto 15px auto;
+       text-align: center;
+    }
+
+    /* style for the color buttons to choose the upper color */
+    .color_button_container{
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        margin: 10px;    
+    }
+    /* style for the color to pick choose the sole color */
+    .color_button_container-2{
+    display: flex;
+    justify-content: center;
+    max-width: 94%;
+    gap: 8px;
+    margin: 10px 10px;
+    }
+    
+    .review_section ul li{
+        text-align: left;
+    }
+
+
+     /* top slider section */
+
+     .single_product_section-2{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .single_controls{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .single_controls .icons img{
+        width: 35px;
+        margin: 0 4px;
+    }
+    .single_page_h1{
+        font-size:22px;
+    }
+    
+    .single_product_slider_container{
+        position: relative;
+        max-width: 700px;
+        min-width: 300px;
+        padding:10px 0;
+    }
+
+    .single_product_slider{
+        display: inline-flex;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .single_product_img{
+        background-color:#f0f0f0;
+    }
+
+    .single_items{
+        width: 400px;
+        z-index: 2;
+    }
+    .single_product_img img{
+        width:100%;
+        mix-blend-mode: multiply;
+        object-fit: contain;
+    }
+
+    /* symbols used to control the slider */
+    .inline{
+        margin-top: 10px;
+    }
+
+    .single_product_section-2 .swiper-button-next{
+        position: absolute;
+        display: inline-block;
+        color:black;
+        top: 0px;
+        right: 0%;
+        width: 30px;
+        text-align: center;
+    }
+
+    .swiper-button-prev{
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        left: 80%;
+        color:black;
+        width: 30px;
+        text-align: center;
+    }
+
+
+    /* sliding shoe section */
+
+    .spliting_shoe_section{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+    .spliting_shoe_section h2{
+        font-weight: 900;
+        letter-spacing: 1px;
+        margin: 7px 0;
+        font-size:22px ;
+    }
+    .spliting_shoe_section h2 span{
+        font-weight: 100;
+    }
+    .spliting_shoe_section p{
+        color: #8A8A8A;
+    }
+    
+    .split_container{
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+        max-width: 100%;
+    }
+    .middle_split_img{
+        flex-basis: 100%;
+    }
+
+    .middle_split_img img{
+        width: 75%;
+    }
+
+    #animation-1{
+        width: 640px;
+    }
+
+    #animation-2{
+        width: 640px;
+        margin-top: -110px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-3{
+        width: 640px;
+        margin-top: -65px;
+        transition: all 0.2s ease-in-out;
+    }
+    #animation-4{
+        width: 645px;
+        margin-top: -60px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+
+    /* text to show on scroll */
+    .left_split_text, .right_split_text{
+       display: none;
+    }
+
+}
+
+@media (max-width:819px){
+    .spliting_shoe_section{
+        margin-top: 60px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .split_container{
+        display: none;
+    }
+}
+
+@media (max-width:426px){
+
+    .product_portfolio_container{
+        display: block;
+    }
+    .img_container{
+        max-width: 100%;
+        margin: 5px auto 0 auto;
+    }
+    .img-flex div{
+        width: 60%;
+    }
+    .img-flex div img{
+        height:200px;
+    }
+
+    .img-flex div{
+        height: 200px;
+    }
+
+    /* top slider section */
+
+    .single_product_section-2{
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    /* symbols used to control the slider */
+    .single_controls{
+        display: block;
+        margin: 10px 0;
+    }
+    .single_controls h1{
+        font-size: 20px;
+    }
+    .single_controls .icons img{
+        width: 30px;
+        height: 30px;
+        margin: 0 4px;
+    }
+
+    .icons{
+        margin-top: 10px;
+    }
+    .single_product_section-2 .swiper-button-next{
+        position:initial;
+        display: inline-block;
+        color:black;
+        width: 30px;
+    }
+
+    .single_product_section-2 .swiper-button-prev{
+        position: initial;  
+        display: inline-block;
+        color:black;
+        width: 30px;
+        text-align: center;
+    }
+    .single_page_h1{
+        font-size:24px;
+    }
+    
+    .single_product_slider_container{
+        /* position: relative; */
+        max-width: 600px;
+        width: 300px;
+        padding:10px 0;
+    }
+
+    .single_product_slider{
+        display: inline-flex;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .single_product_img{
+        background-color:#f0f0f0;
+    }
+
+    .single_items{
+        width: 200px;
+        z-index: 2;
+    }
+
+    /* bg section */
+    .spliting_shoe_section h2{
+        font-size: 20px;
+    }
+
+    .mahabis_classic h2{
+        font-size: 20px;
+    }
+    .mahabis_classic p{
+        font-size: 12px;
+    }
+    #p-tag{
+        font-size: 12px;
+    }
+
+    /* single_flex_items */
+    .flex_container{
+        display: block;
+    }
+    .single_flex_items img{
+        margin-top: 30px;
+    }
+    .single_flex_items.text{
+        padding: 30px;
+        margin-top: 0px;
+    }
+    .single_flex_items.text h5{
+        font-size: 15px;
+    }
+    .single_flex_items.text P{
+        font-size: 11px;
+    }
+
+    /* review section */
+    /* .review_section_2{
+        margin-bottom: 120px;
+    } */
+    
+    #review_header{
+        position: initial;
+        display: block;
+        margin-left: 20px;
+    }
+    #review_header h1{
+        font-size:18px;
+    }
+    #review_header p{
+        font-size: 13px;
+    }
+    #review_header img{
+        width: 60px;
+    }
+    
+    #left_side{
+        display: block;
+    }
+    
+    #bottom_flex{
+        margin:0px 0 0 20px;
+    }
+    
+    .top_review{
+        display: none;
+        margin: 0 3px;
+    }
+
+    .review_slider_container{
+        max-width: 300px;
+        min-width: 150px;
+        padding:10px 0;
+        margin: 30px auto 130px auto;
+        border-top: 1px solid lightgray;
+    }
+    
+    .review_slider{
+        display: inline-flex;
+        margin: 0 10px;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .review_items{
+        width:350px;
+        height: 300px;
+        background-color: #e1e1e1;
+        padding: 50px 10px;
+        margin: 0 auto;
+    }
+    
+    .review_items img{
+        width: 100px;
+        height: 30px;
+        mix-blend-mode: multiply;
+    }
+    
+    .review_items_text p{
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    
+    /* symbols used to control the slider */
+    .icons-2 img{
+        width: 30px;
+        height: 30px;
+        width: 60px;
+    }
+    .inline{
+        margin-top: 10px;
+    }
+    
+    .review_section_2 h4{
+        margin: 5PX 0 0 30px;
+        color: #b1b1b1;
+    }
+    
+    .review_section_2 .swiper-button-next{
+        position: initial;
+        display: inline-block;
+        margin-top: 10px;
+        width: 30px;
+        /* background-color: red; */
+    } 
+    .review_section_2 .swiper-button-prev{
+        position: initial;
+        display: inline-block;
+        width: 30px;
+    }
+
+}

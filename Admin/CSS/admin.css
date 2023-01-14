@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+nav{
+    background-color: rgba(252, 252, 252, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 999;
+}
+.nav_bar{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 150px;
+    mix-blend-mode: multiply;
+    padding-left:10px ;
+}
+
+/* search bar section */
+.search {
+    margin: 5px;
+}
+.search > div {
+    display: inline-block;
+    position: relative;
+    animation: rotate .9s ease-in-out;
+    animation-iteration-count: calc(2);
+}
+.search > div:after {
+    content: "";
+    background: black;
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    top: 30px;
+    right:3px;
+    transform: rotate(135deg);
+}
+.search > div > input {
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height:25px;
+    padding:15px ;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+.search > div > input::placeholder {
+    color: black;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+.search > div > input:focus::placeholder {
+    opacity: 1;
+}
+.search > div > input:focus, .search > div > input:not(:placeholder-shown) {
+    width: 15.65rem;
+}
+
+.admin_active{
+    padding: 0px 15px 0 0;
+    cursor: pointer;
+}
+.admin_active img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+
+/* side nav bar */
+
+.side_nav_bar{
+    width: 15%;
+    position: fixed;
+    top: 70px;
+    z-index: 3;
+    background-color:#fafafa;
+    height: 100vh;
+}
+.contents{
+    line-height: 3.2rem;
+    margin-top: 3.75rem;
+    list-style-type: none;
+}
+.contents li a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: black;
+    padding: 0px 0.9rem;
+    transition: all ease-in-out 0.3s;
+}
+.contents li a:hover{
+    background-color: rgba(234, 234, 234, 0.933);
+}
+.bottom_links{
+    margin-top: 100px;
+}
+.fi{
+    margin-right: 0.9rem;
+}
+
+.body{
+    margin-left: 15%;
+    margin-top: 70px;
+    background-color: #f9f9f9;
+}
+.date{
+    text-align: right;
+    margin: 1rem 0;
+    margin-right: 1.9rem;
+}
+.date p{
+    padding: 10px 0;
+}
+
+#display{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 0.4rem;
+}
+.display_card{
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    flex-basis: 30%;
+    height: 12.5rem;
+    transition: all ease-in-out 0.3s;
+}
+.display_card:hover{
+    box-shadow: 0px -7px 6px rgb(168, 168, 168), 10px 0px 6px rgb(168, 168, 168), 0px 10px 6px rgb(168, 168, 168), -10px 2px 6px rgb(168, 168, 168);
+}
+.card_img img{
+    width: 100px;
+    mix-blend-mode:darken;
+    padding: 0.3rem;
+    margin-bottom: 0.3rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.search p{
+    display: inline-block;
+}
+
+/* effect for the image when the card is hovered on */
+.display_card:hover .card_img img{
+    transform: scale(1.2);
+}
+
+.users img{
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+.display_card h4{
+    font-size: small;
+    margin: 0.4rem 0;
+}
+.display_card p{
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #dddddd;
+    transition: all ease-in-out 0.3s;
+}
+.display_card p:hover{
+    color: white;
+    background-color: black;
+}
+
+/* table */
+
+.products_table_container{
+   margin-top: 3rem;
+   width: 90%;
+   border-radius: 10px;
+   margin: 3rem auto;
+}
+
+.products_table{
+    width: 100%;
+}
+
+tr img{
+    width: 100px;
+    mix-blend-mode: multiply;
+    transition: all ease-in-out 0.3s;
+}
+tr img:hover{
+    transform: scale(1.15);
+}

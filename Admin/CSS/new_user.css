@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#new_user_body{
+    margin-top: 70px;
+    margin-left: 16%;
+}
+
+#register_form{
+    max-width: 50%;
+    margin: 0 auto;
+}
+fieldset{
+    width: 100%;
+    margin: 0 auto;
+    border: none;   
+}
+legend{
+    font-size: 30px;
+    text-align: center;
+}
+#register_error_container{
+    width: 100%;
+    height: 90px;
+    border: 1px solid #f34c3f;
+    padding: 10px;
+    font-weight: 100;
+    background-color: #fadfdf;
+    display: none;
+}
+
+#register_error_container p{
+    color: #f34c3f;
+}
+
+#register_form div{
+    margin: 20px 0;
+}
+
+#register_form label{
+    font-size: 11px;
+    color: rgb(161, 161, 161);
+    text-transform: uppercase;
+}
+
+#register_form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0 10px 0;
+    border: 1px solid rgb(161, 161, 161);
+    padding: 10px;
+    outline: none;
+}
+#register_form input::placeholder{
+    color:lightgray ;
+}
+
+#register_form div p{
+    text-align: center;
+    color: #f34c3f;
+    font-size: 12px;
+    font-weight: 500;
+}
+#register_form div button{
+    width: 100%;
+    padding: 13px;
+    color: white;
+    background-color: #f34c3f;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#register_form div button:hover{
+    background-color: #dd3a2d;
+}
+#register_form .register_anchor{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 22px auto;
+}
+#register_form .register_anchor a{
+    color: #f34c3f;
+    text-decoration: none;
+    margin: 0 auto;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+#register_form .register_anchor a:hover{
+    text-decoration: underline;
+}

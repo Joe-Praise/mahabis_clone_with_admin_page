@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart-top-content{
+    width: 69%;
+    margin: 130px auto 0 auto;
+    /* background-color: red; */
+}
+
+.cart_h1{
+    margin: 10px;
+}
+
+.main_container h5{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+.main_container p{
+    font-size: 11px;
+    line-height: 20px;
+    margin: 5px 0;
+}
+/* the product card holds the info about the product added to the cart*/
+.product_card {
+    border-top: 1px solid lightgray;
+}
+
+/* group displaying flex on items on the cart card */
+.product_card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+
+/* product description section */
+.product_description{
+    padding: 10px 0;
+}
+
+/* adding  button to the width and height to increase and reduce quantity */
+.quantity{
+    margin-top: 6px;
+}
+.quantity div span{
+    padding:0 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sub:active, .add:active{
+    border: none;
+    color: #fff;
+    background-color: #111;
+}
+
+/* styling the img of the product */
+.product-img img{
+    width: 90px;
+    height: 90px;
+    mix-blend-mode: multiply;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+/* setting the width for the two section of the cart card */
+.products{
+flex-basis: 60%;
+}
+.price_checkout{
+    display: none;
+    flex-basis: 35%;
+}
+
+.quantity, .sub_total{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* x for cancel */
+.fa-x{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 9px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.price_checkout a{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 11px;
+}
+.price_checkout a:hover:not(#checkout_btn){
+    text-decoration: underline;
+}
+
+#checkout_btn{
+    background-color: #fc4c3f;
+    color: white;
+    font-size: 13px;
+    padding: 7px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+#checkout_btn:hover{
+    background-color: #dd3a2d;
+}
+
+/* style to the text before the slider */
+.cart_h2{
+    text-align: center;
+    margin-top: 140px;
+}
+
+/* PRODUCT SLIDER SECTION */
+
+.product_slider_container{
+    position: relative;
+    max-width: 650px;
+    width:100%;
+    padding:10px 0;
+    margin: 30px auto 130px auto;
+    border-top: 1px solid lightgray;
+}
+
+.product_slider{
+    display: inline-flex;
+    margin: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.items{
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.items:hover{
+    background-color: rgb(245, 244, 244);
+}
+
+.items img{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+.items h4{
+    font-size: 10px;
+}
+.items p{
+    font-size: 9px;
+}
+.items h5{
+    font-size: 11px;
+    line-height: 40px;
+}
+.items a{
+    display: inline;
+    font-size: 13px;
+    color: #111;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 4px;
+}
+.items a:hover{
+    background-color: #111;
+    color: white;
+}
+
+/* symbols used to control the slider */
+.fa-angle-right{
+    position: absolute;
+    top: 630px;
+    right: 270px;
+    cursor: pointer;
+}
+.fa-angle-left{
+    position: absolute;
+    top: 630px;
+    left: 270px;
+    cursor: pointer;
+}
+
+.swiper-button-next{
+    position: absolute;
+    top: 620px;
+    right: 200px;
+}
+.swiper-button-prev{
+    position: absolute;
+    top: 620px;
+    left: 200px;
+}
+
+
+@media (max-width:1235px){
+    /* symbols used to control the slider */
+.fa-angle-right{
+    position: absolute;
+    top: 630px;
+    right: 100px;
+    cursor: pointer;
+}
+.fa-angle-left{
+    position: absolute;
+    top: 630px;
+    left: 100px;
+    cursor: pointer;
+}
+}
+
+@media (max-width:900px){
+
+    .cart_h1{
+        margin: 10px 0 10px 50px;
+    }
+
+    .product_card{
+        position: relative;
+        display: block;
+        gap:40px;
+    }
+
+    .main_container h5{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 4px 0;
+    }
+    
+    .main_container p{
+        font-size: 10px;
+        line-height: 20px;
+        margin: 5px 0;
+    }
+
+    .main_container{
+        display: flex;
+        justify-content: center;
+        gap: 23px;
+    }
+    /* setting the width for the two section of the cart card */
+    .products{
+    flex-basis: 40%;
+    }
+    .price_checkout{
+        flex-basis: 40%;
+    }
+    
+    .quantity, .sub_total{
+        display: block;
+    }
+
+    .fa-angle-right{
+        position: absolute;
+        top: 690px;
+        right: 100px;
+        cursor: pointer;
+    }
+    .fa-angle-left{
+        position: absolute;
+        top: 690px;
+        left: 100px;
+        cursor: pointer;
+    }
+}
+
+/* @media (max-width:657px){
+
+} */
+
+@media (max-width:657px){
+.products{
+    flex-basis: 40%;
+}
+.price_checkout{
+    flex-basis: 60%;
+}
+    /* symbols used to control the slider */
+.fa-angle-right{
+    position: absolute;
+    top: 700px;
+    right: 50px;
+    cursor: pointer;
+}
+.fa-angle-left{
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    cursor: pointer;
+}
+}
+@media(max-width: 430px){
+.cart-top-content{
+    width: 90%;
+    margin: 130px auto 0 auto;
+    /* background-color: red; */
+}
+.main_container h5{
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    margin: 4px 0;
+}
+
+.main_container p{
+    font-size: 8px;
+    line-height: 20px;
+    margin: 5px 0;
+}
+.quantity{
+    margin-top: 6px;
+}
+.quantity div span{
+    padding:0 5px;
+}
+}
+
+@media (max-width:407px){
+    /* symbols used to control the slider */
+.fa-angle-right{
+    position: absolute;
+    top: 700px;
+    right: 10px;
+    cursor: pointer;
+}
+.fa-angle-left{
+    position: absolute;
+    top: 700px;
+    left: 10px;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 270px){
+.cart_h1{
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+.main_container{
+    display: block;
+    /* justify-content: center;
+    gap: 23px; */
+}
+.fa-angle-right{
+    position: absolute;
+    top: 970px;
+    right: 0px;
+    cursor: pointer;
+}
+.fa-angle-left{
+    position: absolute;
+    top: 970px;
+    left: 0px;
+    cursor: pointer;
+}
+}
+
+@media(max-width: 165px){
+    .fa-angle-right{
+        display: none;
+    }
+    .fa-angle-left{
+       display: none;
+    }
+}
